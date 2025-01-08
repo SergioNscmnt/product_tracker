@@ -1,0 +1,11 @@
+:queues:
+  - default
+  - scraping
+:cron:
+  scrape_prices:
+    cron: "*/10 * * * *" # A cada 10 minutos
+    class: "PriceScraperWorker"
+    args:
+      - product_id
+:concurrency: 5
+:timeout: 8

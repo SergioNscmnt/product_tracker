@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Preço</th>
+      <th>Última varredura</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <td><%= product.price %></td>
+        <td><%= product.last_scraped_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  
