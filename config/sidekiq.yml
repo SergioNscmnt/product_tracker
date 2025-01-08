@@ -4,7 +4,7 @@
 :cron:
   scrape_prices:
     cron: "*/10 * * * *" # A cada 10 minutos
-    class: "PriceScraperWorker"
+    class: "PriceScraperJob"
     args:
       - product_id
 :concurrency: 5

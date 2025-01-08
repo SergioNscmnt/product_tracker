@@ -15,11 +15,22 @@ gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
+# gem "tailwindcss-rails"
 gem "tailwindcss-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Gems used
+
+# gets url
+gem 'open-uri'
+# work with XML and HTML 
+gem 'nokogiri'
+
+# create jobs
 gem 'sidekiq'
+
+# Used for cache jobs in background
 gem 'redis'
 gem 'httparty'
 gem 'sidekiq-cron'

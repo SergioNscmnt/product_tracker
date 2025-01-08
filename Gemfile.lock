@@ -201,6 +201,10 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.1-x86_64-linux-musl)
       racc (~> 1.4)
+    open-uri (0.4.1)
+      stringio
+      time
+      uri
     orm_adapter (0.5.0)
     ostruct (0.6.1)
     parallel (1.26.3)
@@ -359,6 +363,8 @@ GEM
     thruster (0.1.10-arm64-darwin)
     thruster (0.1.10-x86_64-darwin)
     thruster (0.1.10-x86_64-linux)
+    time (0.3.0)
+      date
     timeout (0.4.3)
     turbo-rails (2.0.11)
       actionpack (>= 6.0.0)
@@ -410,6 +416,8 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
+  nokogiri
+  open-uri
   pg (~> 1.1)
   propshaft
   puma (>= 5.0)
